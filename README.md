@@ -1,6 +1,5 @@
 Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing 
 a desktop application. For example, in jQuery you do this to make a button with JavaScript:
-*Please actually open the README! The preview won't work
 ```HTML
 <!doctype html>
 <html>
