@@ -1,5 +1,12 @@
-Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing 
-a desktop application. For example, in jQuery you do this to make a button with JavaScript:
+# Spark.js 
+
+## What is Spark.js?
+
+Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing a desktop application. With Spark.js, you can write HTML from JavaScript, so removing the middleman from your JavaScript and your HTML.
+
+## Why use Spark.js?
+
+Spark.js is very clean, in that the code is self descriptive, and doesn't require unnecessary characters. For example, in jQuery you do this to make a button with JavaScript:
 ```HTML
 <!doctype html>
 <html>
@@ -54,3 +61,12 @@ Spark.create('button', {'type': 'submit', 'onclick': 'test()'}, 'Test')
 If you were to put the JavaScript in a seperate file, you can see how much that is like writing a desktop application.
 
 Spark works in Chrome and Firefox, but not IE. I'm working on IE support
+
+
+## How can I help!
+
+It's on GitHub! Just fork the repo, and send pull requests once you have added features or fixed bugs.
+
+## Wait... What licensing do I have to deal with?
+
+None! Spark.js is public domain! Just pop it in your project and get going!
