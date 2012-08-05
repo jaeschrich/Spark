@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Spark by PyScripter255</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/PyScripter255/Spark">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/PyScripter255/Spark/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/PyScripter255/Spark/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Spark</h1>
+          <p>Spark is a javascript framework that lets you develop applications in javascript like you weren't in a browser. No html, except a simple (really simple) template file where the javascript is injected. Then, you just code in javascript. That's it really. Not another AJAX framework. Just a way to write web apps in pure JavaScript. It does include a AJAX abstraction though.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/PyScripter255">PyScripter255</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>Spark.js</h1>
+
+<h2>What is Spark.js?</h2>
+
+<p>Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing a desktop application. With Spark.js, you can write HTML from JavaScript, so removing the middleman from your JavaScript and your HTML.</p>
+
+<h2>Why use Spark.js?</h2>
+
+<p>Spark.js is very clean, in that the code is self descriptive, and doesn't require unnecessary characters. For example, in jQuery you do this to make a button with JavaScript:</p>
+
+<div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">id=</span><span class="s">"body"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">function</span> <span class="nx">test</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">"Hi"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">"#body"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">"&lt;button type=\"submit\" onclick=\"test()\"&gt;Test&lt;/button&gt;"</span><span class="p">)</span>
+<span class="p">})</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+<p>Not bad right? You could even put the JavaScript in a seperate file, and load that file, so you could then write almost all of your HTML in JavaScript. That might look like this:</p>
+
+<div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">id=</span><span class="s">"body"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">function</span> <span class="nx">test</span><span class="p">(){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">"Hi"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">"#body"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">"&lt;form method=\"POST\"&gt;&lt;input type=\"text\" /&gt;&lt;button type=\"submit\"&gt;Submit&lt;/button&gt;"</span><span class="p">)</span>
+<span class="p">})</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+<p>But at that point, even if the JavaScript is in a seperate file, it's even more complex than just writing the HTML, because everything is on one line, 
+you have to put a backslash before quotes, ect. In Spark however, making a button looks like this:</p>
+
+<div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body</span> <span class="na">id=</span><span class="s">"body"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/spark.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">function</span> <span class="nx">test</span><span class="p">()</span> <span class="p">{</span>
+<span class="nx">alert</span><span class="p">(</span><span class="s2">"Hi"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">Spark</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="s1">'button'</span><span class="p">,</span> <span class="p">{</span><span class="s1">'type'</span><span class="o">:</span> <span class="s1">'submit'</span><span class="p">,</span> <span class="s1">'onclick'</span><span class="o">:</span> <span class="s1">'test()'</span><span class="p">},</span> <span class="s1">'Test'</span><span class="p">)</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+<p>If you were to put the JavaScript in a seperate file, you can see how much that is like writing a desktop application.</p>
+
+<p>Spark works in Chrome and Firefox, but not IE. I'm working on IE support</p>
+
+<h2>Awesome! Where can I get it?</h2>
+
+<p>We are hosted on GitHub <a href="https://github.com/PyScripter255/Spark">here</a>. 
+Download Links:
+<a href="https://github.com/PyScripter255/Spark/zipball/master">zip</a>
+<a href="https://github.com/PyScripter255/Spark/tarball/master">tarball</a></p>
+
+<h2>How can I help!</h2>
+
+<p>I thought we already said that it's on GitHub! Just fork the repo, and send pull requests once you have added features or fixed bugs.</p>
+
+<h2>Wait... What licensing do I have to deal with?</h2>
+
+<p>None! Spark.js is public domain! Just pop it in your project and get going!</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
