@@ -1,18 +1,53 @@
-# README for a newly created project.
+Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing a desktop application. For example, in jQuery you do this to make a button with JavaScript:
 
-There are a couple of things you should do first, before you can use all of Git's power:
+<!doctype html>
+<html>
+<body id="body">
 
-  * Add a remote to this project: in the Cloud9 IDE command line, you can execute the following commands
-    `git remote add [remote name] [remote url (eg. 'git@github.com:/ajaxorg/node_chat')]` [Enter]
-  * Create new files inside your project
-  * Add them to to Git by executing the following command
-    `git add [file1, file2, file3, ...]` [Enter]
-  * Create a commit which can be pushed to the remote you just added
-    `git commit -m 'added new files'` [Enter]
-  * Push the commit the remote
-    `git push [remote name] master` [Enter]
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+function test(){
+  alert("Hi")
+}
+$(document).ready(function() {
+$("#body").html("<button type=\"submit\" onclick=\"test()\">Test</button>")
+})
+</script>
+</body>
+</html>
 
-That's it! If this doesn't work for you, please visit the excellent resources from [Github.com](http://help.github.com) and the [Pro Git](http://http://progit.org/book/) book.
-If you can't find your answers there, feel free to ask us via Twitter (@cloud9ide), [mailing list](groups.google.com/group/cloud9-ide) or IRC (#cloud9ide on freenode).
+Not bad right? You could even put the JavaScript in a seperate file, and load that file, so you could then write almost all of your HTML in JavaScript. That might look like this:
 
-Happy coding!
+<!doctype html>
+<html>
+<body id="body">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+function test(){
+  alert("Hi")
+}
+$(document).ready(function() {
+$("#body").html("<form method=\"POST\"><input type=\"text\" /><button type=\"submit\">Submit</button>")
+})
+</script>
+</body>
+</html>
+
+But at that point, even if the JavaScript is in a seperate file, it's even more complex than just writing the HTML, because everything is on one line, 
+you have to put a backslash before quotes, ect. The same attempt looks like this in Spark:
+
+<!doctype html>
+<html>
+<body id="body">
+<script src="/spark.js"></script>
+<script>
+function test() {
+alert("Hi")
+}
+
+Spark.create('button', {'type': 'submit', 'onclick': 'test()'}, 'Test')
+</script>
+</body>
+</html>
+
+If you were to put the JavaScript in a seperate file, you can see how much that is like writing a desktop application.
