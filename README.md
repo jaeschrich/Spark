@@ -1,6 +1,7 @@
-Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing a desktop application. For example, in jQuery you do this to make a button with JavaScript:
+Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing 
+a desktop application. For example, in jQuery you do this to make a button with JavaScript:
 *Please actually open the README! The preview won't work
-
+``` HTML
 <!doctype html>
 <html>
 <body id="body">
@@ -15,7 +16,7 @@ $("#body").html("<button type=\"submit\" onclick=\"test()\">Test</button>")
 })
 </script>
 </body>
-</html>
+</html>```
 
 Not bad right? You could even put the JavaScript in a seperate file, and load that file, so you could then write almost all of your HTML in JavaScript. That might look like this:
 
