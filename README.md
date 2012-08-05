@@ -53,6 +53,4 @@ Spark.create('button', {'type': 'submit', 'onclick': 'test()'}, 'Test')
 ```
 If you were to put the JavaScript in a seperate file, you can see how much that is like writing a desktop application.
 
-Spark works in Chrome and Firefox, but not IE*
-
-* I'm working on IE support
+Spark works in Chrome and Firefox, but not IE. I'm working on IE support
