@@ -1,10 +1,4 @@
 var Spark = { // The (large) object that contains all of functionality of Spark 
-  create: function(name, attr, between){ // The special function in Spark that lets you create HTML elements. Combines Spark.start and Spark.end (for optimization)
-    Spark.start(name, attr)
-    var scripts = document.getElementsByTagName('script')
-    scripts[scripts.length -1].parentNode.innerHTML = scripts[scripts.length -1].parentNode.innerHTML + between
-    Spark.end(name)
-  },
   start: function(name, attr){ // Used for tags that contain more that text, starts the tag
     var keys = Object.keys(attr)
     if (attr === undefined){attr = {}}
@@ -12,14 +6,16 @@ var Spark = { // The (large) object that contains all of functionality of Spark
     for (i in keys){
     attrStr += keys[i] + '=\"' +attr[keys[i]] + '" '
     }
-    var scripts = document.getElementsByTagName('script')
-    scripts[scripts.length -1].parentNode.innerHTML = scripts[scripts.length -1].parentNode.innerHTML + "<"+name+" "+attrStr+">"
-    //document.write("<"+name+" "+attrStr+">")
+    document.write("<"+name+" "+attrStr+">")
   },
   end: function(name){ // Ends the multi-element tag.\
-    var scripts = document.getElementsByTagName('script')
-    scripts[scripts.length -1].parentNode.innerHTML = scripts[scripts.length -1].parentNode.innerHTML + "</"+name+'>'
-     //document.write("</"+name+'>')
+    document.write("</"+name+">")
+  },
+    create: function(name, attr, between){ // The special function in Spark that lets you create HTML elements. Combines Spark.start and Spark.end (for optimization)
+    if (between === undefined){between = ""}
+        Spark.start(name, attr)
+        document.write(between)
+        Spark.end(name)
   },
   superAjax: function(type, url, callback){ // A wrapper for the built-in AJAX methods. Executes the callback with the respone text as the argument
       var ajaxHttp;
@@ -39,7 +35,7 @@ ajaxHttp.onreadystatechange=function()
   
     }
   }
-ajaxHttp.open(type.toUpperCase,url+x.value+"&t="+parseInt(new Date().getTime().toString().substring(0, 10)),true);
+ajaxHttp.open(type.toUpperCase(),url,true);
 ajaxHttp.send();
 },
   ajax: function(type, url, callback){ // A wrapper for the built-in AJAX methods. Executes the callback with the respone text as the argument
