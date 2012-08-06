@@ -70,4 +70,7 @@ It's on GitHub! Just fork the repo, and send pull requests once you have added f
 
 ## Wait... What licensing do I have to deal with?
 
-None! Spark.js is public domain! Just pop it in your project and get going!
+None! Spark.js is public domain. Just pop it in your project and get going.
+
+## Where can I learn more?
+All information not covered here is in the [wiki](https://github.com/PyScripter255/Spark/wiki).
