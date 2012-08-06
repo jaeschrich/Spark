@@ -1,6 +1,12 @@
 # Spark.js 
 
-## Update! Read CHANGELOG for detials.
+## Update!
+###Changelog
+
+* Redesigned internals: Partial IE support! The AJAX doesn't work, but the rest does
+* Redesigned internals: Now, the script will run inside it's parent tag. So, Spark.js scripts can be embedded in <div> tags. If the script is in the body, it works the same as it used to.
+* Redisigned internals: The code is smaller through resue, even without compression.
+* New function!: Spark.superAjax. Works the same as Spark.ajax, but returns the ajaxHttp *object* not the text.
 ## What is Spark.js?
 
 Spark.js is a javascript framework that lets you develop applications in javascript like you weren't in a browser. No html, except a simple (really simple) template file where the javascript is injected. Then, you just code in javascript. That's it really. Not another AJAX framework. Just a way to write web apps in pure JavaScript. It does include AJAX abstraction however
