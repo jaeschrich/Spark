@@ -1,3 +1,5 @@
+var $ = Spark
+
 function getPosts(){
     $.get('/post', function(res){
     document.getElementById("myDiv").innerHTML = res
