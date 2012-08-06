@@ -1,23 +1,3 @@
-function randomId() {//A function used to generate a random id. Thanks to help from StackOverflow.com
-    var ids=[]//Generates a random string
-	var __a=0
-	var __b=true
-	var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
-	var string_length = 8;
-	var randomstring = '';
-	for (var i=0; i<string_length; i++) {
-		var rnum = Math.floor(Math.random() * chars.length);
-		randomstring += chars.substring(rnum,rnum+1);
-	}
-	var __c=ids.indexOf(randomstring)//Checks if the string exists already.
-	if (__c > -1){
-	randomstring=randomId()
-	}
-	else if(__c===-1) {
-	return randomstring;//Returns the string
-	}
-}
-
 var Spark = { // The (large) object that contains all of functionality of Spark 
   create: function(name, attr, between){ // The special function in Spark that lets you create HTML elements
     var keys = Object.keys(attr)
