@@ -2,7 +2,8 @@
 
 ## What is Spark.js?
 
-Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing a desktop application. With Spark.js, you can write HTML from JavaScript, so removing the middleman from your JavaScript and your HTML.
+Spark.js is a javascript framework that lets you develop applications in javascript like you weren't in a browser. No html, except a simple (really simple) template file where the javascript is injected. Then, you just code in javascript. That's it really. Not another AJAX framework. Just a way to write web apps in pure JavaScript. It does include AJAX abstraction however
+. With Spark.js, you can write HTML from JavaScript, so removing the middleman from your JavaScript and your HTML.
 
 ## Why use Spark.js?
 
