@@ -1,4 +1,7 @@
-# Spark.js 
+# Spark.js
+
+#THE CURRENT UPDATE IS BROKEN!
+Use dist/park.min.js instead, it is the same as last release. Will fix soon.
 
 ## Update!
 ###Changelog
