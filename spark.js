@@ -67,5 +67,3 @@ ajaxHttp.open("GET",url,true);
 ajaxHttp.send();
 }
 }
-    
-var $ = Spark
