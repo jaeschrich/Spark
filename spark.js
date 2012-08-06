@@ -2,7 +2,6 @@ var Spark = { // The (large) object that contains all of functionality of Spark
   create: function(name, attr, between){ // The special function in Spark that lets you create HTML elements
     var keys = Object.keys(attr)
     if (attr === undefined){attr = {}}
-    if (attr.id === undefined){attr.id = randomId() }
     if (between === undefined){between = ""}
     var attrStr = ""
         for (i in keys){
