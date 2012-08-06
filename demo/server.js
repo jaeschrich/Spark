@@ -14,7 +14,7 @@ case '/':
         })
         break;
 case '/spark.js':
-        fs.readFile('demo/spark.min.js', function(err, data){
+        fs.readFile('dist/spark.min.js', function(err, data){
                     if (err){console.log(err);}
                     res.writeHead(200, {"Content-Type": "text/javascript"})
                     res.end(data)
