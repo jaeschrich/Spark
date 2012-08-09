@@ -45,5 +45,9 @@ ajaxHttp.send();
 },
   get: function(url,callback){ // Like the AJAX wrapper, but special for GET requests. GET requests are common, so it is a bit more convient. It's pretty much the same.
     Spark.ajax("get", url, callback)
+},
+widget: {},
+pack: function(name, render){ // A wrapper for the built-in AJAX methods. Executes the callback with the respone text as the argument
+    Spark.widget[name] = render
 }
 }
