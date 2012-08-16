@@ -1,3 +1,6 @@
+#Changelog: Fourth Version
+* Added Spark.addStyle (see wiki)
+
 #Changelog Third Version
 * Added Spark.pack and Spark.widget object for the creation of modules.
 

@@ -49,5 +49,16 @@ ajaxHttp.send();
 widget: {},
 pack: function(name, render){ // A wrapper for the built-in AJAX methods. Executes the callback with the respone text as the argument
     Spark.widget[name] = render
-}
+},
+addStyle: function(name, attr){
+    var keys = Object.keys(attr)
+    if (attr === undefined){attr = {}}
+    var attrStr = name+"{\n"
+    for (i in keys){
+    attrStr += keys[i] + ': ' +attr[keys[i]] + ';\n'
+    }
+    attrStr = attrStr += "}\n"
+    document.getElementsByTagName('head')[0].innerHTML += "<style>\n"+attrStr+"</style>" 
+    
+        }
 }

@@ -1,9 +1,8 @@
 # Spark.js
 
-## Update! v3
+## Update! v4
 ###Changelog
-
-* Added Spark.pack and Spark.widget for the creation of modules. View wiki [page](https://github.com/PyScripter255/Spark/wiki/Making-Widgets)
+* Added Spark.addStyle (see wiki)
 
 ## What is Spark.js?
 
