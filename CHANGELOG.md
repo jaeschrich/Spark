@@ -1,5 +1,5 @@
 #Changelog: Fourth Version
-* Added Spark.addStyle (see wiki)
+* Added Spark.addStyle (see the [tutorial](https://github.com/PyScripter255/Spark/wiki/Tutorial))
 
 #Changelog Third Version
 * Added Spark.pack and Spark.widget object for the creation of modules.
