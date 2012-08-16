@@ -2,7 +2,7 @@
 
 ## Update! v4
 ###Changelog
-* Added Spark.addStyle (see wiki)
+* Added Spark.addStyle (see the [tutorial](https://github.com/PyScripter255/Spark/wiki/Tutorial))
 
 ## What is Spark.js?
 
