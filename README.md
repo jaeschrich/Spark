@@ -47,7 +47,7 @@ $("#body").html("<form method=\"POST\"><input type=\"text\" /><button type=\"sub
 </html>
 ```
 But at that point, even if the JavaScript is in a seperate file, it's even more complex than just writing the HTML, because everything is on one line, 
-you have to put a backslash before quotes, ect. In Spark however, making a button looks like this:
+you have to put a backslash before quotes, etc. In Spark however, making a button looks like this:
 ```HTML
 <!doctype html>
 <html>
