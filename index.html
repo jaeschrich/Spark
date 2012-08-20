@@ -121,13 +121,16 @@ Download Links:
 <h2>Where can I learn more?</h2>
 <p>All the information not stored here is on the <a href="https://github.com/PyScripter255/Spark/wiki">wiki</a>.</p>
 <h2>I'd like to see it in action</h2>
-<p>Some code:</p><br>
-<div contenteditable="true" id="theCode">
+<p>Code:</p><button onclick="tryCode()">Update Preview</button><br>
+<div style="outline:none;border-style:solid;border-color:white;padding:5px;margin:2px;" contenteditable="true" id="theCode">
   function test(){
   alert("Hello World!!")
 }
 Spark.create("button", {"onclick": "test()"}, "Click Me!")
 </div><br>
+<p>Preview:</p>
+<iframe id="codetry">
+</iframe>
       </section>
 
     </div>
@@ -141,7 +144,7 @@ Spark.create("button", {"onclick": "test()"}, "Click Me!")
         preview.write("<html><script src='https://raw.github.com/PyScripter255/Spark/master/dist/spark.min.js'><\/script><body><script>"+theCode+"<\/script></body></html>")
         preview.close()
       }
-      setInterval(tryCode, 500)
+      tryCode()
     </script>
   </body>
 </html>
