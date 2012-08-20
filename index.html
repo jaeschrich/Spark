@@ -139,6 +139,7 @@ Spark.create("button", {"onclick": "test()"}, "Click Me!")
       function tryCode(){
         preview.open();
         preview.write("<html><script src='https://raw.github.com/PyScripter255/Spark/master/dist/spark.min.js'><\/script><body><script>"+theCode+"<\/script></body></html>")
+        preview.close()
       }
       setInterval(tryCode, 500)
     </script>
