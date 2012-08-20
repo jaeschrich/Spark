@@ -19,14 +19,27 @@ var Spark = { // The (large) object that contains all of functionality of Spark
   },
   superAjax: function(type, url, callback){ // A wrapper for the built-in AJAX methods. Executes the callback with the respone text as the argument
       var ajaxHttp;
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  ajaxHttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  ajaxHttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
+    try{
+		// Opera 8.0+, Firefox, Safari
+		ajaxHttp = new XMLHttpRequest();
+	} catch (e){
+		// Internet Explorer Browsers
+		try{
+			ajaxHttp = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				ajaxHttp = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+                try{
+                    ajaxHttp = new XDomainRequest();
+                }
+                catch (e){
+				// Something went wrong
+				document.write("Sorry, AJAX and your browser don't mix. This browser may be better: <a href='https://www.google.com/intl/en/chrome/'>Download Chrome</a>");
+				return false;
+			}
+		}
+	}}  
 ajaxHttp.onreadystatechange=function()
   {
   if (ajaxHttp.readyState==4 && ajaxHttp.status==200)
@@ -35,7 +48,7 @@ ajaxHttp.onreadystatechange=function()
   
     }
   }
-ajaxHttp.open(type.toUpperCase(),url,true);
+ajaxHttp.open(type.toUpperCase(),url+"?msdfss=test&jajsk="+Math.floor((Math.random())*10),true);
 ajaxHttp.send();
 },
   ajax: function(type, url, callback){ // A wrapper for the built-in AJAX methods. Executes the callback with the respone text as the argument
