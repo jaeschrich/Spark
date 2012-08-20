@@ -1,6 +1,6 @@
 # Spark.js
 
-## Update! v4.1
+## Update! v0.4.1
 ###Changelog
 * Worked on IE AJAX
 
