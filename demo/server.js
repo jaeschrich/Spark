@@ -1,11 +1,13 @@
 var http = require('http')
 var fs = require('fs')
 var qs = require("querystring")
+var url = require("url")
 
 var msg = ""
 http.createServer(function(req, res){
-console.log("Request recieved for "+req.url)
-switch (req.url){
+var path = url.parse(req.url).pathname
+console.log("Request recieved for "+path)
+switch (path){
 case '/':
         fs.readFile('demo/index.html', function(err, data){
                     if (err){console.log(err)}
@@ -14,7 +16,7 @@ case '/':
         })
         break;
 case '/spark.js':
-        fs.readFile('dist/spark.min.js', function(err, data){
+        fs.readFile('spark.js', function(err, data){
                     if (err){console.log(err);}
                     res.writeHead(200, {"Content-Type": "text/javascript"})
                     res.end(data)
