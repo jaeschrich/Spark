@@ -20,7 +20,7 @@ var Spark = { // The (large) object that contains all of functionality of Spark
   superAjax: function(type, url, callback){ // A wrapper for the built-in AJAX methods. Executes the callback with the respone text as the argument
       var ajaxHttp;
     try{
-		// Opera 8.0+, Firefox, Safari
+    	// Opera 8.0+, Firefox, Safari
 		ajaxHttp = new XMLHttpRequest();
 	} catch (e){
 		// Internet Explorer Browsers
