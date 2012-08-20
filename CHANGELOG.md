@@ -1,3 +1,6 @@
+#Changelog: 0.4.1
+* Worked on IE AJAX
+
 #Changelog: Fourth Version
 * Added Spark.addStyle (see the [tutorial](https://github.com/PyScripter255/Spark/wiki/Tutorial))
 
