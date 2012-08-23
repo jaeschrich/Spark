@@ -77,4 +77,3 @@ None! Spark.js is public domain. Just pop it in your project and get going.
 
 ## Where can I learn more?
 All information not covered here is in the [wiki](https://github.com/PyScripter255/Spark/wiki).
->>>>>>> 45462d62ff89b270522b6125df7956539d61bebc
