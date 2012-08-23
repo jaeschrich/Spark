@@ -4,7 +4,7 @@ var Spark = { // The (large) object that contains all of functionality of Spark
     if (attr === undefined){attr = {}}
     var attrStr = ""
     for (i in keys){
-    attrStr += keys[i] + '=\"' +attr[keys[i]] + '" '
+    attrStr += keys[i] + '=\"' +attr[keys[i]].replace(/\"/g,'\'')+ '" '
     }
     document.write("<"+name+" "+attrStr+">")
   },

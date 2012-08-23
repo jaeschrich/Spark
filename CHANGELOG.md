@@ -1,3 +1,6 @@
+#Changelog v0.5.2
+* Fixed string error, now you can use any kind of quotes with the args list string
+
 #Changelog: 0.5
 * First Stable version: Internet Explorer works with AJAX (tested with IE 9 64-bit and 32-bit)
 
