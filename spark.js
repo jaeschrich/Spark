@@ -48,7 +48,8 @@ ajaxHttp.onreadystatechange=function()
   
     }
   }
-ajaxHttp.open(type.toUpperCase(),url+"?msdfss=test&jajsk="+Math.floor((Math.random())*10),true);
+//ajaxHttp.setRequestHeader("Expires", contentType)
+ajaxHttp.open(type.toUpperCase(),url+"?dfsjajsk="+(new Date().getTime()).toString(),true);
 ajaxHttp.send();
 },
   ajax: function(type, url, callback){ // A wrapper for the built-in AJAX methods. Executes the callback with the respone text as the argument

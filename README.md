@@ -1,8 +1,8 @@
 # Spark.js
 
-## Update! v0.4.1
-###Changelog
-* Worked on IE AJAX
+## Update! v0.5
+#Changelog
+* First Stable version! Internet Explorer works with AJAX (tested with IE 9 64-bit and 32-bit)
 
 ## What is Spark.js?
 Spark.js is HTML in JavaScript. It's clean, simple, and elegant. It's a javascript framework that lets you develop applications in javascript like you weren't in a browser. No html, except a simple (really simple) template file where the javascript is injected. Then, you just code in javascript. That's it really. Not another AJAX framework. Just a way to write web apps in pure JavaScript. It does include AJAX abstraction however

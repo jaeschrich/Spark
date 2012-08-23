@@ -1,3 +1,6 @@
+#Changelog: 0.5
+* First Stable version: Internet Explorer works with AJAX (tested with IE 9 64-bit and 32-bit)
+
 #Changelog: 0.4.1
 * Worked on IE AJAX
 
