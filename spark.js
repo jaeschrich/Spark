@@ -20,7 +20,7 @@ var Spark = { // The (large) object that contains all of functionality of Spark
   superAjax: function(type, url, callback){ // A wrapper for the built-in AJAX methods. Executes the callback with the respone text as the argument
       var ajaxHttp;
     try{
-    	// Opera 8.0+, Firefox, Safari
+        // Opera 8.0+, Firefox, Safari
 		ajaxHttp = new XMLHttpRequest();
 	} catch (e){
 		// Internet Explorer Browsers
@@ -74,5 +74,24 @@ addStyle: function(name, attr){
     attrStr = attrStr += "}\n"
     document.getElementsByTagName('head')[0].innerHTML += "<style>\n"+attrStr+"</style>" 
     
-        }
+        },
+sel: function(s){
+  var sel = s.substring(1,s.length)
+  switch (s.charAt(0)){
+    case '#':
+      return document.getElementById(sel)
+      break;
+    case '.':
+      var allEls = document.getElementsByTagName('*')
+          for (i = 0;i<allEls.length;i++){
+            if (allEls[i].className === sel){
+            return allEls[i]
+            }
+          }
+      break;
+    case '*':
+      return document.getElementsByTagName(sel)
+      break;
+          }  
+    }
 }

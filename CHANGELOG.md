@@ -1,3 +1,6 @@
+#Changelog v0.6
+* Added Spark.sel (like jQuery's $ function). The Tutorial covers the Spark.sel function
+
 #Changelog v0.5.2
 * Fixed string error, now you can use any kind of quotes with the args list string
 

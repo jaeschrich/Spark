@@ -1,8 +1,8 @@
 # Spark.js
 
-## Update! v0.5.2
+## Update! v0.6
 #Changelog
-* Fixed string error, now you can use any kind of quotes with the args list string
+* Added Spark.sel (like jQuery's $ function). The Tutorial covers the Spark.sel function
 
 ## What is Spark.js?
 Spark.js is HTML in JavaScript. It's clean, simple, and elegant. It's a javascript framework that lets you develop applications in javascript like you weren't in a browser. No html, except a simple (really simple) template file where the javascript is injected. Then, you just code in javascript. That's it really. Not another AJAX framework. Just a way to write web apps in pure JavaScript. It does include AJAX abstraction however
@@ -76,4 +76,10 @@ It's on GitHub! Just fork the repo, and send pull requests once you have added f
 None! Spark.js is public domain. Just pop it in your project and get going.
 
 ## Where can I learn more?
-All information not covered here is in the [wiki](https://github.com/PyScripter255/Spark/wiki).
+The tutorial is [here](https://github.com/PyScripter255/Spark/wiki/tutorial). The rest is on the [wiki](https://github.com/PyScripter255/Spark/wiki).
+
+## Complete Feature List
+* Dynamic creation of HTML with Spark.start(), Spark.end(), and Spark.create()
+* Cross browser ajax with Spark.ajax(), Spark.superAjax(), and Spark.get()
+* Spark.pack() for creating widgets and the Spark.widget object for accessing them (Docs on widgets [here](https://github.com/PyScripter255/Spark/wiki/Making-Widgets))
+* jQuery-like Spark.sel() function for manipulating the DOM
