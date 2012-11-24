@@ -5,8 +5,7 @@
 * Added Spark.sel (really simple DOM selectio). The Tutorial covers the Spark.sel function
 
 ## What is Spark.js?
-Spark.js is HTML in JavaScript. It's clean, simple, and elegant. It's a javascript framework that lets you develop applications in javascript like you weren't in a browser. No html, except a simple (really simple) template file where the javascript is injected. Then, you just code in javascript. That's it really. Not another AJAX framework. Just a way to write web apps in pure JavaScript. It does include AJAX abstraction however
-. With Spark.js, you can write HTML from JavaScript, so removing the middleman from your JavaScript and your HTML.
+A JavaScript framework that lets you write HTML from JavaScript.
 
 ## Why use Spark.js?
 
@@ -64,16 +63,12 @@ Spark.create('button', {'type': 'submit', 'onclick': 'test()'}, 'Test')
 ```
 If you were to put the JavaScript in a seperate file, you can see how much that is like writing a desktop application.
 
-Spark works in Chrome and Firefox, and partial IE support (AJAX is weird, sort of works).
+Spark works in Chrome and Firefox, and IE.
 
 
 ## How can I help!
 
 It's on GitHub! Just fork the repo, and send pull requests once you have added features or fixed bugs.
-
-## Wait... What licensing do I have to deal with?
-
-None! Spark.js is public domain. Just pop it in your project and get going.
 
 ## Where can I learn more?
 The tutorial is [here](https://github.com/PyScripter255/Spark/wiki/tutorial). The rest is on the [wiki](https://github.com/PyScripter255/Spark/wiki).
@@ -82,4 +77,4 @@ The tutorial is [here](https://github.com/PyScripter255/Spark/wiki/tutorial). Th
 * Dynamic creation of HTML with Spark.start(), Spark.end(), and Spark.create()
 * Cross browser ajax with Spark.ajax(), Spark.superAjax(), and Spark.get()
 * Spark.pack() for creating widgets and the Spark.widget object for accessing them (Docs on widgets [here](https://github.com/PyScripter255/Spark/wiki/Making-Widgets))
-* jQuery-like Spark.sel() function for manipulating the DOM
+* DOM selection tool Spark.sel() function for manipulating the DOM
