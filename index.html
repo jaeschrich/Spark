@@ -108,38 +108,32 @@ Download Links:
 
 <p>I thought we already said that it's on GitHub! Just fork the repo, and send pull requests once you have added features or fixed bugs.</p>
 
-<h2>Wait... What licensing do I have to deal with?</h2>
-
-<p>None! Spark.js is public domain! Just pop it in your project and get going!</p>
-
 <h2>I'd like to see it in action</h2>
-
-<p>Code:</p>Update Preview<br><div>
+<p>Code:</p><button onclick="tryCode()">Update Preview</button><br>
+<div style="outline:none;border-style:solid;border-color:white;padding:5px;margin:2px;" contenteditable="true" id="theCode">
   function test(){
   alert("Hello World!!")
 }
 Spark.create("button", {"onclick": "test()"}, "Click Me!")
-</div><br><p>Preview:</p>
+</div><br>
+<p>Preview:</p>
+<iframe id="codetry">
+</iframe>
+      </section>
 
-
-
-
-<pre><code>  &lt;/section&gt;
-
-&lt;/div&gt;
-&lt;!--[if !IE]&gt;&lt;script&gt;fixScale(document);&lt;/script&gt;&lt;!--&lt;![endif]--&gt;
-&lt;script type="text/javascript"&gt;
- var previewFrame = document.getElementById('codetry');
- var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
-  function tryCode(){
-    var theCode = document.getElementById("theCode").innerHTML
-    preview.open();
-    preview.write("&lt;html&gt;&lt;script src='https://raw.github.com/PyScripter255/Spark/master/dist/spark.min.js'&gt;&lt;\/script&gt;&lt;body&gt;&lt;script&gt;"+theCode+"&lt;\/script&gt;&lt;/body&gt;&lt;/html&gt;")
-    preview.close()
-  }
-  tryCode()
-&lt;/script&gt;
-</code></pre>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    <script type="text/javascript">
+     var previewFrame = document.getElementById('codetry');
+     var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+      function tryCode(){
+        var theCode = document.getElementById("theCode").innerHTML
+        preview.open();
+        preview.write("<html><script src='https://raw.github.com/PyScripter255/Spark/master/dist/spark.min.js'><\/script><body><script>"+theCode+"<\/script></body></html>")
+        preview.close()
+      }
+      tryCode()
+    </script>
       </section>
     </div>
 
@@ -150,7 +144,6 @@ Spark.create("button", {"onclick": "test()"}, "Click Me!")
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
     
 
   </body>
