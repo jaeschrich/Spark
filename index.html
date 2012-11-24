@@ -1,49 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Spark by PyScripter255</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <script src="https://raw.github.com/PyScripter255/Spark/master/dist/spark.min.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Spark : HTML in JavaScript" />
 
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Spark</title>
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/PyScripter255/Spark">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/PyScripter255/Spark/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/PyScripter255/Spark/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
 
-    <div class="wrapper">
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/PyScripter255/Spark">View on GitHub</a>
 
-      <section>
-        <div id="title">
-          <h1>Spark</h1>
-          <p>Write HTML in JavaScript.</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/PyScripter255">PyScripter255</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-        </div>
+          <h1 id="project_title">Spark</h1>
+          <h2 id="project_tagline">HTML in JavaScript</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/PyScripter255/Spark/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/PyScripter255/Spark/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>Spark.js</h1>
 
 <h2>What is Spark.js?</h2>
 
-<p>Spark.js is HTML in JavaScript. It's clean, simple, and elegant. It's a javascript framework that lets you develop applications in javascript like you weren't in a browser. No html, except a simple (really simple) template file where the javascript is injected. Then, you just code in javascript. That's it really. Not another AJAX framework. Just a way to write web apps in pure JavaScript. It does include AJAX abstraction however . With Spark.js, you can write HTML from JavaScript, so removing the middleman from your JavaScript and your HTML.</p>
+<p>Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing a desktop application. With Spark.js, you can write HTML from JavaScript, so removing the middleman from your JavaScript and your HTML.</p>
 
 <h2>Why use Spark.js?</h2>
 
@@ -52,7 +44,8 @@
 <div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body</span> <span class="na">id=</span><span class="s">"body"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"</span><span class="nt">&gt;<br>&lt;/script&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script&gt;</span>
 <span class="kd">function</span> <span class="nx">test</span><span class="p">(){</span>
   <span class="nx">alert</span><span class="p">(</span><span class="s2">"Hi"</span><span class="p">)</span>
@@ -70,13 +63,13 @@
 <div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body</span> <span class="na">id=</span><span class="s">"body"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"</span><span class="nt">&gt;<br>&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script&gt;</span>
 <span class="kd">function</span> <span class="nx">test</span><span class="p">(){</span>
   <span class="nx">alert</span><span class="p">(</span><span class="s2">"Hi"</span><span class="p">)</span>
 <span class="p">}</span>
 <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-<span class="nx">$</span><span class="p">(</span><span class="s2">"#body"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">"&lt;form method=\"POST\"&gt;&lt;input type=\"text\"/&gt;&lt;button type=\"submit\"&gt;Submit&lt;/button&gt;"</span><span class="p">)</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">"#body"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">"&lt;form method=\"POST\"&gt;&lt;input type=\"text\" /&gt;&lt;button type=\"submit\"&gt;Submit&lt;/button&gt;"</span><span class="p">)</span>
 <span class="p">})</span>
 <span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
@@ -84,7 +77,7 @@
 </pre></div>
 
 <p>But at that point, even if the JavaScript is in a seperate file, it's even more complex than just writing the HTML, because everything is on one line, 
-you have to put a backslash before quotes, etc. In Spark however, making a button looks like this:</p>
+you have to put a backslash before quotes, ect. In Spark however, making a button looks like this:</p>
 
 <div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
@@ -101,7 +94,8 @@ you have to put a backslash before quotes, etc. In Spark however, making a butto
 </pre></div>
 
 <p>If you were to put the JavaScript in a seperate file, you can see how much that is like writing a desktop application.</p>
-<p>Spark works in Chrome and Firefox, and partial IE support (AJAX only sort of works).</p>
+
+<p>Spark works in Chrome and Firefox, but not IE. I'm working on IE support</p>
 
 <h2>Awesome! Where can I get it?</h2>
 
@@ -114,33 +108,50 @@ Download Links:
 
 <p>I thought we already said that it's on GitHub! Just fork the repo, and send pull requests once you have added features or fixed bugs.</p>
 
-<h2>Where can I learn more?</h2>
-<p>All the information not stored here is on the <a href="https://github.com/PyScripter255/Spark/wiki">wiki</a>.</p>
+<h2>Wait... What licensing do I have to deal with?</h2>
+
+<p>None! Spark.js is public domain! Just pop it in your project and get going!</p>
+
 <h2>I'd like to see it in action</h2>
-<p>Code:</p><button onclick="tryCode()">Update Preview</button><br>
-<div style="outline:none;border-style:solid;border-color:white;padding:5px;margin:2px;" contenteditable="true" id="theCode">
+
+<p>Code:</p>Update Preview<br><div>
   function test(){
   alert("Hello World!!")
 }
 Spark.create("button", {"onclick": "test()"}, "Click Me!")
-</div><br>
-<p>Preview:</p>
-<iframe id="codetry">
-</iframe>
-      </section>
+</div><br><p>Preview:</p>
 
+
+
+
+<pre><code>  &lt;/section&gt;
+
+&lt;/div&gt;
+&lt;!--[if !IE]&gt;&lt;script&gt;fixScale(document);&lt;/script&gt;&lt;!--&lt;![endif]--&gt;
+&lt;script type="text/javascript"&gt;
+ var previewFrame = document.getElementById('codetry');
+ var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+  function tryCode(){
+    var theCode = document.getElementById("theCode").innerHTML
+    preview.open();
+    preview.write("&lt;html&gt;&lt;script src='https://raw.github.com/PyScripter255/Spark/master/dist/spark.min.js'&gt;&lt;\/script&gt;&lt;body&gt;&lt;script&gt;"+theCode+"&lt;\/script&gt;&lt;/body&gt;&lt;/html&gt;")
+    preview.close()
+  }
+  tryCode()
+&lt;/script&gt;
+</code></pre>
+      </section>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-    <script type="text/javascript">
-     var previewFrame = document.getElementById('codetry');
-     var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
-      function tryCode(){
-        var theCode = document.getElementById("theCode").innerHTML
-        preview.open();
-        preview.write("<html><script src='https://raw.github.com/PyScripter255/Spark/master/dist/spark.min.js'><\/script><body><script>"+theCode+"<\/script></body></html>")
-        preview.close()
-      }
-      tryCode()
-    </script>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Spark maintained by <a href="https://github.com/PyScripter255">PyScripter255</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
