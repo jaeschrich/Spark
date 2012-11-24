@@ -35,7 +35,7 @@
 
 <h2>What is Spark.js?</h2>
 
-<p>Spark.js is a JavaScript Framework designed to make writing JavaScript on the client-side like writing a desktop application. With Spark.js, you can write HTML from JavaScript, so removing the middleman from your JavaScript and your HTML.</p>
+<p>A JavaScript framework that lets you write HTML from JavaScript.</p>
 
 <h2>Why use Spark.js?</h2>
 
@@ -77,7 +77,7 @@
 </pre></div>
 
 <p>But at that point, even if the JavaScript is in a seperate file, it's even more complex than just writing the HTML, because everything is on one line, 
-you have to put a backslash before quotes, ect. In Spark however, making a button looks like this:</p>
+you have to put a backslash before quotes, etc. In Spark however, making a button looks like this:</p>
 
 <div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
@@ -95,45 +95,24 @@ you have to put a backslash before quotes, ect. In Spark however, making a butto
 
 <p>If you were to put the JavaScript in a seperate file, you can see how much that is like writing a desktop application.</p>
 
-<p>Spark works in Chrome and Firefox, but not IE. I'm working on IE support</p>
-
-<h2>Awesome! Where can I get it?</h2>
-
-<p>We are hosted on GitHub <a href="https://github.com/PyScripter255/Spark">here</a>. 
-Download Links:
-<a href="https://github.com/PyScripter255/Spark/zipball/master">zip</a>
-<a href="https://github.com/PyScripter255/Spark/tarball/master">tarball</a></p>
+<p>Spark works in Chrome and Firefox, and IE.</p>
 
 <h2>How can I help!</h2>
 
-<p>I thought we already said that it's on GitHub! Just fork the repo, and send pull requests once you have added features or fixed bugs.</p>
+<p>It's on GitHub! Just fork the repo, and send pull requests once you have added features or fixed bugs.</p>
 
-<h2>I'd like to see it in action</h2>
-<p>Code:</p><button onclick="tryCode()">Update Preview</button><br>
-<div style="outline:none;border-style:solid;border-color:white;padding:5px;margin:2px;" contenteditable="true" id="theCode">
-  function test(){
-  alert("Hello World!!")
-}
-Spark.create("button", {"onclick": "test()"}, "Click Me!")
-</div><br>
-<p>Preview:</p>
-<iframe id="codetry">
-</iframe>
-      </section>
+<h2>Where can I learn more?</h2>
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-    <script type="text/javascript">
-     var previewFrame = document.getElementById('codetry');
-     var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
-      function tryCode(){
-        var theCode = document.getElementById("theCode").innerHTML
-        preview.open();
-        preview.write("<html><script src='https://raw.github.com/PyScripter255/Spark/master/dist/spark.min.js'><\/script><body><script>"+theCode+"<\/script></body></html>")
-        preview.close()
-      }
-      tryCode()
-    </script>
+<p>The tutorial is <a href="https://github.com/PyScripter255/Spark/wiki/tutorial">here</a>. The rest is on the <a href="https://github.com/PyScripter255/Spark/wiki">wiki</a>.</p>
+
+<h2>Complete Feature List</h2>
+
+<ul>
+<li>Dynamic creation of HTML with Spark.start(), Spark.end(), and Spark.create()</li>
+<li>Cross browser ajax with Spark.ajax(), Spark.superAjax(), and Spark.get()</li>
+<li>Spark.pack() for creating widgets and the Spark.widget object for accessing them (Docs on widgets <a href="https://github.com/PyScripter255/Spark/wiki/Making-Widgets">here</a>)</li>
+<li>DOM selection tool Spark.sel() function for manipulating the DOM</li>
+</ul>
       </section>
     </div>
 
@@ -144,6 +123,7 @@ Spark.create("button", {"onclick": "test()"}, "Click Me!")
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
+
     
 
   </body>
