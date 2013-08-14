@@ -1,8 +1,6 @@
 # Spark.js
-
-## Update! v0.6
-#Changelog
-* Added Spark.sel (really simple DOM selection). The Tutorial covers the Spark.sel function
+## Disclaimer
+This is not actively developed, and there are better tools out there to use. I made this mostly as a learning exercise.
 
 ## What is Spark.js?
 A JavaScript framework that lets you write HTML from JavaScript.
